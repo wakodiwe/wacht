@@ -1,4 +1,6 @@
-![Wacht Logo](/docs/assets/src/img/wacht.png "Wacht Logo")  
+<p align="center">
+  <img src="/docs/assets/src/img/wacht.png" width="75%" alt="Wacht Logo"/>
+</p>  
 
 A minimal HTTP server with automatic live reload for web development.
 
