@@ -1,4 +1,4 @@
-.PHONY: help install build clean test dist run stop publish testpypi
+.PHONY: help install build clean test dist run stop
 
 PYINSTALLER := pyinstaller
 VERSION := $(shell python3 -c "from wacht import __version__; print(__version__)")
@@ -12,8 +12,6 @@ help:
 	@echo " make stop       - Stop daemon"
 	@echo " make build      - Build binary with pyinstaller"
 	@echo " make install    - Install binary to /usr/local/bin/"
-	@echo " make publish    - Build and upload to PyPI"
-	@echo " make testpypi   - Build and upload to TestPyPI"
 	@echo " make clean      - Remove build files"
 
 test:
@@ -35,16 +33,6 @@ install: build
 	sudo cp dist/wacht /usr/local/bin/wacht
 	sudo chmod +x /usr/local/bin/wacht
 	@echo "Installed. Run 'wacht' to start."
-
-publish:
-	@echo "Building and publishing to PyPI..."
-	python3 -m build
-	twine upload dist/*
-
-testpypi:
-	@echo "Building and uploading to TestPyPI..."
-	python3 -m build
-	twine upload --repository testpypi dist/*
 
 clean:
 	rm -rf build/ dist/ *.spec
