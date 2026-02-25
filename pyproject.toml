@@ -22,7 +22,6 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
-    "Topic :: Software Development :: Tools",
 ]
 dependencies = []
 
@@ -30,8 +29,8 @@ dependencies = []
 wacht = "wacht:main"
 
 [project.urls]
-Homepage = "https://github.com/wako/wacht"
-Repository = "https://github.com/wako/wacht"
+Homepage = "https://github.com/wakodiwe/wacht"
+Repository = "https://github.com/wakodiwe/wacht"
 
 [tool.setuptools.packages.find]
 where = ["."]

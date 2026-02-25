@@ -1,4 +1,4 @@
-# Wacht
+![Wacht Logo](/docs/assets/src/img/wacht.png "Wacht Logo")  
 
 A minimal HTTP server with automatic live reload for web development.
 
@@ -29,14 +29,12 @@ make install  # Requires sudo, installs to /usr/local/bin/
 
 ## Usage
 
-```bash
-wacht                           # Serve current directory on port 8080
-wacht -p 3000                   # Use custom port
-wacht ./public                  # Serve from specific directory
-wacht -l /var/log/wacht.log     # Log to file
-wacht -d                        # Run as background daemon
-wacht -s                        # Stop running daemon (or --stop)
-```
+    wacht                           # Serve current directory on port 8080
+    wacht -p 3000                   # Use custom port
+    wacht ./public                  # Serve from specific directory
+    wacht -l /var/log/wacht.log     # Log to file
+    wacht -d                        # Run as background daemon
+    wacht -s                        # Stop running daemon (or --stop)
 
 ## How It Works
 
@@ -65,13 +63,11 @@ make clean     # Remove build artifacts
 
 ## Architecture
 
-```
 wacht/
 ├── wacht.py              # CLI entry point
 ├── src/wacht/__init__.py # Core server implementation
 ├── tests/test_wacht.py   # Test suite
 └── README.md             # This file
-```
 
 ### Key Components
 
