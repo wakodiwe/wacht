@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "wacht"
-version = "0.1.0"
+version = "1.1.0"
 description = "Live reload HTTP server for web development"
 readme = "README.md"
 license = {text = "MIT"}
@@ -29,7 +29,6 @@ dependencies = []
 wacht = "wacht:main"
 
 [project.urls]
-Homepage = "https://github.com/wakodiwe/wacht"
 Repository = "https://github.com/wakodiwe/wacht"
 
 [tool.setuptools.packages.find]
