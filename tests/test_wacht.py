@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import Mock, patch
 
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(__file__)), "src"))
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 from wacht import ReloadServer, ReloadHandler, get_mtime, get_pid_file, __version__
 
